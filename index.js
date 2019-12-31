@@ -111,9 +111,9 @@ function loop(timestamp) {
 	}
 	previous = timestamp;
 	spawner.tick(dt);
-	ctx.fillStyle = '#34495e';
+	ctx.fillStyle = '#050000';
 	ctx.fillRect(0, 0, size.x, size.y);
-	ctx.fillStyle = '#fff';
+	ctx.fillStyle = '#f09758';
 	for (let i = points.length; i--;) {
 		let point = points[i];
 		let val = 1 - at(point.x, point.y);
