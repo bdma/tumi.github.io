@@ -1,7 +1,7 @@
 console.clear();
 
 let sources = [
-	{ name: 'wendy', url: './wendy.JPG' },
+	{ name: 'wendy', url: './viva.jpeg' },
 	// { name: 'pearl', url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Meisje_met_de_parel.jpg/300px-Meisje_met_de_parel.jpg' },
 	// { name: 'phil', url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/15664/phil_dark_bg.jpg' },
 	// { name: 'joy+roy', url: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/15664/joyroy_dark.jpg' },
@@ -76,7 +76,7 @@ function at(x, y) {
 	return picData[~~x + ~~y * size.x] || 0;
 }
 function addLine() {
-	points.push(...[...Array(definition)].map((e, i) => ({ x:0, y: i * partSize })));
+	points.push(...[...Array(definition)].map((e, i) => ({ x: 0, y: i * partSize })));
 }
 
 let spawner = (() => {
